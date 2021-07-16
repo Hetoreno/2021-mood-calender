@@ -1,0 +1,125 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: sans-serif;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width:80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Moods */
+.face{
+    height:2rem;
+    width:2rem;
+    border:none;
+    border-radius: 50%;
+}
+
+.exciteful{
+    color: green;
+    background: none;
+}
+
+.happy{
+    color:greenyellow;
+    background: none;
+}
+
+.okay{
+    color: rgb(209, 207, 66);
+    background: none;
+}
+
+.sad{
+    color: orange;
+    background: none;
+}
+
+.depressed{
+    color: red;
+    background: none;
+}
+
+i{
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+/* Calender */
+.calender{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* month */
+.month{
+    width:28%;
+    margin: 1rem 2rem;
+}
+
+.month h4{
+    width: 35%;
+    margin: auto;
+    font-size: 25px;
+}
+/* Week */
+.week{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.week p{
+    font-size: 20px;
+    margin-left:5px ;
+}
+/* dates */
+.days{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+
+
+ .week p, .day-empty, .day{
+    height:calc(100%/7);
+    width:calc(100%/7);
+    margin-bottom: 5px;
+}
+
+.circle{
+    color: white;
+    background: gray;
+    height:2rem;
+    width:2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;   
+}
+
+.face.selected{
+    background:currentColor;
+}
+
+.face.face.selected i{
+    color:white;
+}
