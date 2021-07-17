@@ -20,18 +20,3 @@ circleDates.forEach(event =>{
         event.classList.add("storage");
     })
 })
-
-//local storage
-/* document.addEventListener("DOMContentLoaded", (save)=>{
-    let keep;
-    if (localStorage.getItem("selected") === null){
-        keep =[];
-    } else {
-        keep = JSON.parse(localStorage.getItem("selected"));
-    }
-
-    keep.push(save);
-    localStorage.setItem("selected",JSON.stringify(keep));
-    
-}) */
-localStorage.setItem("asdasd");
